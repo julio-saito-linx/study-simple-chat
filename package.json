@@ -16,6 +16,7 @@
     "url": "https://github.com/saitodisse/study-simple-chat/issues"
   },
   "homepage": "https://github.com/saitodisse/study-simple-chat",
+  "private": true,
   "dependencies": {
     "express": "^4.8.1",
     "jade": "^1.5.0",
