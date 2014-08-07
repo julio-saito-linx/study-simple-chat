@@ -1,0 +1,25 @@
+{
+  "name": "study-simple-chat",
+  "version": "0.0.1",
+  "description": "study-simple-chat =================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saitodisse/study-simple-chat.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saitodisse/study-simple-chat/issues"
+  },
+  "homepage": "https://github.com/saitodisse/study-simple-chat",
+  "dependencies": {
+    "express": "^4.8.1",
+    "jade": "^1.5.0",
+    "mogger": "*",
+    "socket.io": "^1.0.6"
+  }
+}
