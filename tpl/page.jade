@@ -2,12 +2,32 @@ doctype html
 html
   head
     title= "Real time web chat"
-    script(src='/chat.js')
-    script(src='/socket.io/socket.io.js')    body
-  #content(style='width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
-  .controls
-    | Name: 
-    input#name(style='width:350px;')
-    br
-    input#field(style='width:350px;')
-    input#send(type='button', value='send')
+    link(rel='stylesheet', href='/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/site.css')
+  body
+    
+    .container
+
+      h1 Simple Chat
+      .row
+        .col-xs-8.name-field
+          | Your name here: 
+        .col-xs-4
+          input.form-control#name
+
+      .row
+        .col-xs-12
+          pre.form-control#content
+      
+      .row
+        .col-xs-11
+          input.form-control#field
+        .col-xs-1            
+          button.btn.btn-default.glyphicon.glyphicon-ok#send
+
+
+    script(src='/js/vendor/jquery.min.js')
+    script(src='/js/vendor/bootstrap.min.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/js/chat.js')

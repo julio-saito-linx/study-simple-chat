@@ -1,0 +1,21 @@
+h1{
+	text-align: center;
+	font-size: 80px;
+	margin-bottom: 40px;
+}
+
+#content{
+	height: 300px;
+	margin: 20px 0 ;
+	border: solid 1px #999;
+	overflow-y: scroll;
+	background-color: #eee;
+}
+
+.name-field{
+	text-align: right;
+}
+
+#field, #send{
+	width: 100%;
+}

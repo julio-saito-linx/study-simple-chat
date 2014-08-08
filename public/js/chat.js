@@ -1,3 +1,11 @@
+$(document).ready(function() {
+    $("#field").keyup(function(e) {
+        if(e.keyCode == 13) {
+            sendMessage();
+        }
+    });
+});
+
 window.onload = function() {
  
     var messages = [];
@@ -28,6 +36,7 @@ window.onload = function() {
         } else {
             var text = field.value;
             socket.emit('send', { message: text, username: name.value });
+            field.value = "";
         }
     };
  
