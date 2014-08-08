@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var port = 3700;
-require('./enableMogger')(express);
+//require('./enableMogger')(express);
 
 // jade tamplate
 app.set('views', __dirname + '/tpl');
