@@ -1,19 +1,26 @@
 doctype html
 html
   head
-    title= "Real time web chat"
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Real time web chat
+
     link(rel='stylesheet', href='/css/bootstrap-theme.min.css')
     link(rel='stylesheet', href='/css/bootstrap.min.css')
     link(rel='stylesheet', href='/css/site.css')
+
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   body
-    
     .container
 
       h1 Simple Chat
       .row
-        .col-xs-8.name-field
-          | Your name here: 
-        .col-xs-4
+        .col-md-3.col-xs-12
+          .form-group
+            label(for="name") Your name: 
           input.form-control#name
 
       .row
@@ -21,13 +28,13 @@ html
           pre.form-control#content
       
       .row
-        .col-xs-11
+        .col-md-10.col-xs-8
           input.form-control#field
-        .col-xs-1            
+        .col-md-2.col-xs-4
           button.btn.btn-default.glyphicon.glyphicon-ok#send
-
 
     script(src='/js/vendor/jquery.min.js')
     script(src='/js/vendor/bootstrap.min.js')
     script(src='/socket.io/socket.io.js')
+    script(src='/js/configuration.js')
     script(src='/js/chat.js')
