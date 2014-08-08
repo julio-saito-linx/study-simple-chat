@@ -19,3 +19,17 @@ h1{
 #field, #send{
 	width: 100%;
 }
+
+footer{
+	margin: 40px 0;
+}
+
+
+/* mobile */
+@media (max-width: 480px) {
+
+	#content{
+		height: 100px;
+	}
+
+}

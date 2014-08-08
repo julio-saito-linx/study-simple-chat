@@ -25,7 +25,7 @@ $(document).ready(function() {
 				html += '<b>' + (messages[i].username ? messages[i].username : 'Server') + ': </b>';
 				html += messages[i].message + '<br />';
 			}
-			jContent[0].innerHTML = html;
+			jContent.html(html);
 			jContent[0].scrollTop = jContent[0].scrollHeight;
 		} else {
 			console.log("There is a problem:", data);
